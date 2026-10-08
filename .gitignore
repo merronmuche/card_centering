@@ -1,0 +1,63 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Model weights & exports ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.mlpackage/
+*.torchscript
+
+# --- Ultralytics training outputs ---
+runs/
+wandb/
+*.cache
+
+# --- Archives (multi-GB dataset zips) ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# --- Images (datasets, overlays, review crops, screenshots) ---
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+*.tif
+*.tiff
+Screenshots/
+
+# --- YOLO label files (thousands of small .txt files; ship them inside the dataset zips) ---
+**/labels/
+
+# --- Dataset folders ---
+colab_bundle/
+merged_all_dataset_used_for_training_2nd/
+merged_centering_combined/
+merged_unique/
+old_dupulicate_dataset/
+sep25_all_merged_used_for_training_1st/merged_centering_dataset_sep25/
+sep25_all_merged_used_for_training_1st/merged_centering_dataset_sep25_segmentation_rect/
+
+# --- Generated review output ---
+**/overlay/
+**/overlay_review/
+**/removed_duplicates_backup/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
